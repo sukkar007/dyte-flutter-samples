@@ -26,7 +26,7 @@ mixin _$LocalUserState {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -43,7 +43,7 @@ mixin _$LocalUserState {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -60,7 +60,7 @@ mixin _$LocalUserState {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -206,7 +206,7 @@ class _$_LocalUserInitialState implements _LocalUserInitialState {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -226,7 +226,7 @@ class _$_LocalUserInitialState implements _LocalUserInitialState {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -246,7 +246,7 @@ class _$_LocalUserInitialState implements _LocalUserInitialState {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -422,7 +422,7 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -442,7 +442,7 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -462,7 +462,7 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -644,7 +644,7 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -664,7 +664,7 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -684,7 +684,7 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -848,7 +848,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -868,7 +868,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -888,7 +888,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -1046,7 +1046,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -1066,7 +1066,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -1086,7 +1086,7 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -1240,7 +1240,7 @@ class _$_LocalUserOnRemovedFromMeeting
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -1260,7 +1260,7 @@ class _$_LocalUserOnRemovedFromMeeting
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -1280,7 +1280,7 @@ class _$_LocalUserOnRemovedFromMeeting
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -1434,7 +1434,7 @@ class _$_LocalUserOnAudioDevicesUpdated
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -1454,7 +1454,7 @@ class _$_LocalUserOnAudioDevicesUpdated
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -1474,7 +1474,7 @@ class _$_LocalUserOnAudioDevicesUpdated
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -1652,7 +1652,7 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -1672,7 +1672,7 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -1692,7 +1692,7 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -1806,7 +1806,7 @@ abstract class _$$_LocalUserOnUpdateCopyWith<$Res> {
           $Res Function(_$_LocalUserOnUpdate) then) =
       __$$_LocalUserOnUpdateCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteLocalUser participant});
+  $Res call({DyteSelfUser participant});
 }
 
 /// @nodoc
@@ -1826,7 +1826,7 @@ class __$$_LocalUserOnUpdateCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteLocalUser,
+              as DyteSelfUser,
     ));
   }
 }
@@ -1837,7 +1837,7 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
   const _$_LocalUserOnUpdate(this.participant);
 
   @override
-  final DyteLocalUser participant;
+  final DyteSelfUser participant;
 
   @override
   String toString() {
@@ -1874,7 +1874,7 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -1894,7 +1894,7 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -1914,7 +1914,7 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -2013,10 +2013,10 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
 }
 
 abstract class _LocalUserOnUpdate implements LocalUserState {
-  const factory _LocalUserOnUpdate(final DyteLocalUser participant) =
+  const factory _LocalUserOnUpdate(final DyteSelfUser participant) =
       _$_LocalUserOnUpdate;
 
-  DyteLocalUser get participant;
+  DyteSelfUser get participant;
   @JsonKey(ignore: true)
   _$$_LocalUserOnUpdateCopyWith<_$_LocalUserOnUpdate> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2071,7 +2071,7 @@ class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -2091,7 +2091,7 @@ class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -2111,7 +2111,7 @@ class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -2293,7 +2293,7 @@ class _$_LocalUserOnWaitListStatusUpdate
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -2313,7 +2313,7 @@ class _$_LocalUserOnWaitListStatusUpdate
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -2333,7 +2333,7 @@ class _$_LocalUserOnWaitListStatusUpdate
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
@@ -2494,7 +2494,7 @@ class _$_LocalUserOnWebinarPresentRequestReceived
     required TResult Function() onRemovedFromMeeting,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteLocalUser participant) onUpdate,
+    required TResult Function(DyteSelfUser participant) onUpdate,
     required TResult Function() onStoppedPresenting,
     required TResult Function(DyteWaitListStatus waitListStatus)
         onWaitListStatusUpdate,
@@ -2514,7 +2514,7 @@ class _$_LocalUserOnWebinarPresentRequestReceived
     TResult? Function()? onRemovedFromMeeting,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteLocalUser participant)? onUpdate,
+    TResult? Function(DyteSelfUser participant)? onUpdate,
     TResult? Function()? onStoppedPresenting,
     TResult? Function(DyteWaitListStatus waitListStatus)?
         onWaitListStatusUpdate,
@@ -2534,7 +2534,7 @@ class _$_LocalUserOnWebinarPresentRequestReceived
     TResult Function()? onRemovedFromMeeting,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteLocalUser participant)? onUpdate,
+    TResult Function(DyteSelfUser participant)? onUpdate,
     TResult Function()? onStoppedPresenting,
     TResult Function(DyteWaitListStatus waitListStatus)? onWaitListStatusUpdate,
     TResult Function()? onWebinarPresentRequestReceived,

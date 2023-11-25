@@ -40,7 +40,7 @@ mixin _$ParticipantEventStates {
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -70,7 +70,7 @@ mixin _$ParticipantEventStates {
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -100,7 +100,7 @@ mixin _$ParticipantEventStates {
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -319,7 +319,7 @@ class _$_ParticipantEventStates implements _ParticipantEventStates {
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -352,7 +352,7 @@ class _$_ParticipantEventStates implements _ParticipantEventStates {
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -385,7 +385,7 @@ class _$_ParticipantEventStates implements _ParticipantEventStates {
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -636,7 +636,7 @@ class _$_ParticipantEventStatesOnParticipantJoin
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -669,7 +669,7 @@ class _$_ParticipantEventStatesOnParticipantJoin
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -702,7 +702,7 @@ class _$_ParticipantEventStatesOnParticipantJoin
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -962,7 +962,7 @@ class _$_ParticipantEventStatesOnParticipantLeave
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -995,7 +995,7 @@ class _$_ParticipantEventStatesOnParticipantLeave
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -1028,7 +1028,7 @@ class _$_ParticipantEventStatesOnParticipantLeave
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -1260,7 +1260,7 @@ class _$_ParticipantEventStatesOnScreenSharesUpdated
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -1293,7 +1293,7 @@ class _$_ParticipantEventStatesOnScreenSharesUpdated
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -1326,7 +1326,7 @@ class _$_ParticipantEventStatesOnScreenSharesUpdated
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -1580,7 +1580,7 @@ class _$_ParticipantEventStatesOnScreenShareStarted
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -1613,7 +1613,7 @@ class _$_ParticipantEventStatesOnScreenShareStarted
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -1646,7 +1646,7 @@ class _$_ParticipantEventStatesOnScreenShareStarted
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -1906,7 +1906,7 @@ class _$_ParticipantEventStatesOnScreenShareEnded
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -1939,7 +1939,7 @@ class _$_ParticipantEventStatesOnScreenShareEnded
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -1972,7 +1972,7 @@ class _$_ParticipantEventStatesOnScreenShareEnded
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -2242,7 +2242,7 @@ class _$_ParticipantEventStatesAudioUpdate
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -2275,7 +2275,7 @@ class _$_ParticipantEventStatesAudioUpdate
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -2308,7 +2308,7 @@ class _$_ParticipantEventStatesAudioUpdate
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -2580,7 +2580,7 @@ class _$_ParticipantEventStatesVideoUpdate
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -2613,7 +2613,7 @@ class _$_ParticipantEventStatesVideoUpdate
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -2646,7 +2646,7 @@ class _$_ParticipantEventStatesVideoUpdate
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -2909,7 +2909,7 @@ class _$_ParticipantEventStateOnActiveSpeakerChanged
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -2942,7 +2942,7 @@ class _$_ParticipantEventStateOnActiveSpeakerChanged
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -2975,7 +2975,7 @@ class _$_ParticipantEventStateOnActiveSpeakerChanged
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -3207,7 +3207,7 @@ class _$_ParticipantEventStatesOnNoActiveSpeaker
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -3240,7 +3240,7 @@ class _$_ParticipantEventStatesOnNoActiveSpeaker
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -3273,7 +3273,7 @@ class _$_ParticipantEventStatesOnNoActiveSpeaker
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -3527,7 +3527,7 @@ class _$_ParticipantEventStatesOnParticipantPinned
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -3560,7 +3560,7 @@ class _$_ParticipantEventStatesOnParticipantPinned
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -3593,7 +3593,7 @@ class _$_ParticipantEventStatesOnParticipantPinned
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -3825,7 +3825,7 @@ class _$_ParticipantEventStatesOnParticipantUnpinned
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -3858,7 +3858,7 @@ class _$_ParticipantEventStatesOnParticipantUnpinned
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -3891,7 +3891,7 @@ class _$_ParticipantEventStatesOnParticipantUnpinned
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -4058,7 +4058,7 @@ abstract class _$$_ParticipantEventStatesOnUpdateCopyWith<$Res> {
           $Res Function(_$_ParticipantEventStatesOnUpdate) then) =
       __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteRoomParticipants participants});
+  $Res call({DyteParticipants participants});
 }
 
 /// @nodoc
@@ -4080,7 +4080,7 @@ class __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>
       null == participants
           ? _value.participants
           : participants // ignore: cast_nullable_to_non_nullable
-              as DyteRoomParticipants,
+              as DyteParticipants,
     ));
   }
 }
@@ -4092,7 +4092,7 @@ class _$_ParticipantEventStatesOnUpdate
   const _$_ParticipantEventStatesOnUpdate(this.participants);
 
   @override
-  final DyteRoomParticipants participants;
+  final DyteParticipants participants;
 
   @override
   String toString() {
@@ -4143,7 +4143,7 @@ class _$_ParticipantEventStatesOnUpdate
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -4176,7 +4176,7 @@ class _$_ParticipantEventStatesOnUpdate
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -4209,7 +4209,7 @@ class _$_ParticipantEventStatesOnUpdate
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -4366,10 +4366,9 @@ class _$_ParticipantEventStatesOnUpdate
 abstract class _ParticipantEventStatesOnUpdate
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnUpdate(
-          final DyteRoomParticipants participants) =
-      _$_ParticipantEventStatesOnUpdate;
+      final DyteParticipants participants) = _$_ParticipantEventStatesOnUpdate;
 
-  DyteRoomParticipants get participants;
+  DyteParticipants get participants;
   @JsonKey(ignore: true)
   _$$_ParticipantEventStatesOnUpdateCopyWith<_$_ParticipantEventStatesOnUpdate>
       get copyWith => throw _privateConstructorUsedError;
@@ -4475,7 +4474,7 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -4508,7 +4507,7 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -4541,7 +4540,7 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -4807,7 +4806,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantAccepted
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -4840,7 +4839,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantAccepted
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -4873,7 +4872,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantAccepted
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -5138,7 +5137,7 @@ class _$_ParticipantEventStateOnWaitListParticipantClosed
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -5171,7 +5170,7 @@ class _$_ParticipantEventStateOnWaitListParticipantClosed
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -5204,7 +5203,7 @@ class _$_ParticipantEventStateOnWaitListParticipantClosed
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -5469,7 +5468,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantJoined
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -5502,7 +5501,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantJoined
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -5535,7 +5534,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantJoined
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
@@ -5803,7 +5802,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantRejected
     required TResult Function(DyteMeetingParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
-    required TResult Function(DyteRoomParticipants participants) onUpdate,
+    required TResult Function(DyteParticipants participants) onUpdate,
     required TResult Function(List<DyteMeetingParticipant> activeParticipants)
         onActiveParticipantsChanged,
     required TResult Function(DyteMeetingParticipant participant)
@@ -5836,7 +5835,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantRejected
     TResult? Function()? onNoActiveSpeaker,
     TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
-    TResult? Function(DyteRoomParticipants participants)? onUpdate,
+    TResult? Function(DyteParticipants participants)? onUpdate,
     TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult? Function(DyteMeetingParticipant participant)?
@@ -5869,7 +5868,7 @@ class _$_ParticipantEventStatesOnWaitListParticipantRejected
     TResult Function()? onNoActiveSpeaker,
     TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
-    TResult Function(DyteRoomParticipants participants)? onUpdate,
+    TResult Function(DyteParticipants participants)? onUpdate,
     TResult Function(List<DyteMeetingParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     TResult Function(DyteMeetingParticipant participant)?
