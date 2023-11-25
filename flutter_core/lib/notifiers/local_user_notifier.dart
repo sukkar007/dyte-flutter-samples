@@ -23,12 +23,12 @@ class LocalUserNotifer extends Notifier<LocalUserState>
   bool get isAudioEnabled => _settingsRepository.isAudioEnabled;
 
   Future<void> toggleAudio() async {
-    final isAudioEnabled = await _settingsRepository.toggleAudio();
+    final isAudioEnabled = _settingsRepository.toggleAudio();
     onAudioUpdate(isAudioEnabled);
   }
 
   Future<void> toggleVideo() async {
-    final isVideoEnabled = await _settingsRepository.toggleVideo();
+    final isVideoEnabled = _settingsRepository.toggleVideo();
     onVideoUpdate(isVideoEnabled);
   }
 
@@ -41,7 +41,7 @@ class LocalUserNotifer extends Notifier<LocalUserState>
       state = LocalUserState.onProximityChanged(isNear);
 
   @override
-  void onUpdate(DyteLocalUser participant) =>
+  void onUpdate(DyteSelfUser participant) =>
       state = LocalUserState.onUpdate(participant);
 
   @override

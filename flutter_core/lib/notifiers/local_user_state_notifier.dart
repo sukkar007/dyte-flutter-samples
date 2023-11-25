@@ -35,7 +35,7 @@ class LocalUserNotifier extends StateNotifier<LocalUserEventStates>
       state = LocalUserEventStates.onWaitListStatusUpdate(waitListStatus);
 
   @override
-  void onUpdate(DyteLocalUser participant) =>
+  void onUpdate(DyteSelfUser participant) =>
       state = LocalUserEventStates.onUpdate(participant);
 
   @override

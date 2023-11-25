@@ -28,7 +28,7 @@ class LocalUserEventStates with _$LocalUserEventStates {
   const factory LocalUserEventStates.onWaitListStatusUpdate(
       DyteWaitListStatus status) = _LocalUserEventStateonWaitListStatusUpdate;
 
-  const factory LocalUserEventStates.onUpdate(DyteLocalUser participant) =
+  const factory LocalUserEventStates.onUpdate(DyteSelfUser participant) =
       _LocalUserEventStateonUpdate;
 
   const factory LocalUserEventStates.onWebinarPresentRequestReceived() =

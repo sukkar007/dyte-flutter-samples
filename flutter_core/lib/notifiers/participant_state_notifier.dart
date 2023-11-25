@@ -59,7 +59,7 @@ class ParticipantNotifier extends Notifier<ParticipantEventStates>
   }
 
   @override
-  void onUpdate(DyteRoomParticipants participants) {
+  void onUpdate(DyteParticipants participants) {
     state = ParticipantEventStates.onUpdate(participants);
   }
 }

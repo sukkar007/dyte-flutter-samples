@@ -20,7 +20,7 @@ class RecordingNotifer extends Notifier<DyteRecordingState>
   }
 
   @override
-  void onMeetingRecordingStopError() {
+  void onMeetingRecordingStopError(String error) {
     state = dyteMobileClient.recording.recordingState;
   }
 

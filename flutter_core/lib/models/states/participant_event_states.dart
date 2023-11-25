@@ -50,8 +50,8 @@ class ParticipantEventStates with _$ParticipantEventStates {
   const factory ParticipantEventStates.onParticipantUnpinned() =
       _ParticipantEventStatesOnParticipantUnpinned;
 
-  const factory ParticipantEventStates.onUpdate(
-      DyteRoomParticipants participants) = _ParticipantEventStatesOnUpdate;
+  const factory ParticipantEventStates.onUpdate(DyteParticipants participants) =
+      _ParticipantEventStatesOnUpdate;
 
   const factory ParticipantEventStates.onActiveParticipantsChanged(
           {required List<DyteMeetingParticipant> activeParticipants}) =

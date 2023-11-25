@@ -26,7 +26,7 @@ class LocalUserState with _$LocalUserState {
   const factory LocalUserState.onProximityChanged(bool isNear) =
       _LocalUserOnProximityChanged;
 
-  const factory LocalUserState.onUpdate(DyteLocalUser participant) =
+  const factory LocalUserState.onUpdate(DyteSelfUser participant) =
       _LocalUserOnUpdate;
 
   const factory LocalUserState.onStoppedPresenting() =

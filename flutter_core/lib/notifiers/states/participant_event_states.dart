@@ -37,8 +37,8 @@ class ParticipantEventStates with _$ParticipantEventStates {
   const factory ParticipantEventStates.onScreenSharesUpdated() =
       _ParticipantEventStatesOnScreenSharesUpdated;
 
-  const factory ParticipantEventStates.onUpdate(
-      DyteRoomParticipants participants) = _ParticipantEventStatesOnUpdate;
+  const factory ParticipantEventStates.onUpdate(DyteParticipants participants) =
+      _ParticipantEventStatesOnUpdate;
 
   const factory ParticipantEventStates.onVideoUpdate(
           {required bool videoEnabled,
