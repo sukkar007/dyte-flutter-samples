@@ -68,17 +68,7 @@ class LocalUserNotifer extends Notifier<LocalUserState>
   }
 
   @override
-  void onStoppedPresenting() {
-    state = const LocalUserState.onStoppedPresenting();
-  }
-
-  @override
   void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) {
     state = LocalUserState.onWaitListStatusUpdate(waitListStatus);
-  }
-
-  @override
-  void onWebinarPresentRequestReceived() {
-    state = const LocalUserState.onWebinarPresentRequestReceived();
   }
 }

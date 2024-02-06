@@ -37,12 +37,4 @@ class LocalUserNotifier extends StateNotifier<LocalUserEventStates>
   @override
   void onUpdate(DyteSelfUser participant) =>
       state = LocalUserEventStates.onUpdate(participant);
-
-  @override
-  void onWebinarPresentRequestReceived() =>
-      state = const LocalUserEventStates.onWebinarPresentRequestReceived();
-
-  @override
-  void onStoppedPresenting() =>
-      state = const LocalUserEventStates.onStoppedPresenting();
 }
