@@ -33,23 +33,19 @@ PODS:
     - SwiftyGif
   - dyte_core_ios (0.0.1):
     - AmazonIVSPlayer (~> 1.19.0)
-    - DyteiOSCore (= 0.8.4)
+    - DyteiOSCore (= 1.29.1)
     - Flutter
-  - DyteiOSCore (0.8.4):
-    - DyteiOSSocketIO (~> 0.1.6)
-    - JitsiWebRTC (~> 106.0.0)
-  - DyteiOSSocketIO (0.1.6):
-    - DyteStarscream (~> 0.0.3)
-  - DyteStarscream (0.0.3)
+  - DyteiOSCore (1.29.1):
+    - WebRTC-SDK (= 114.5735.08)
   - file_picker (0.0.1):
     - DKImagePickerController/PhotoGallery
     - Flutter
   - Flutter (1.0.0)
-  - JitsiWebRTC (106.0.0)
-  - SDWebImage (5.18.2):
-    - SDWebImage/Core (= 5.18.2)
-  - SDWebImage/Core (5.18.2)
+  - SDWebImage (5.18.10):
+    - SDWebImage/Core (= 5.18.10)
+  - SDWebImage/Core (5.18.10)
   - SwiftyGif (5.4.4)
+  - WebRTC-SDK (114.5735.08)
 
 DEPENDENCIES:
   - dyte_core_ios (from `.symlinks/plugins/dyte_core_ios/ios`)
@@ -62,11 +58,9 @@ SPEC REPOS:
     - DKImagePickerController
     - DKPhotoGallery
     - DyteiOSCore
-    - DyteiOSSocketIO
-    - DyteStarscream
-    - JitsiWebRTC
     - SDWebImage
     - SwiftyGif
+    - WebRTC-SDK
 
 EXTERNAL SOURCES:
   dyte_core_ios:
@@ -80,15 +74,13 @@ SPEC CHECKSUMS:
   AmazonIVSPlayer: b9498771b74cd05e93c67dd3844bb4e2c453f2aa
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
-  dyte_core_ios: a4b4b19ebc1810cf21e6307dda1e0f4e0fa5cb17
-  DyteiOSCore: e2bd63b338a1ac7c1718ace29dd3b12657d59161
-  DyteiOSSocketIO: e1cd26f46951a4d80a04e2297f3f6dd2e34304bd
-  DyteStarscream: a923d070fab3f16334aed0ff8a1788446753f62a
+  dyte_core_ios: 457f62845351c86d4fdea90c1af3182e7b584178
+  DyteiOSCore: 45755eb5ff32646ea1837deda6f8a32d086e852c
   file_picker: ce3938a0df3cc1ef404671531facef740d03f920
-  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  JitsiWebRTC: f441eb0e2d67f0588bf24e21c5162e97342714fb
-  SDWebImage: c0de394d7cf7f9838aed1fd6bb6037654a4572e4
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+  WebRTC-SDK: c24d2a6c9f571f2ed42297cb8ffba9557093142b
 
 PODFILE CHECKSUM: cc1f88378b4bfcf93a6ce00d2c587857c6008d3b
 
