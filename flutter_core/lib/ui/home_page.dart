@@ -1,14 +1,11 @@
 import 'package:dyte_core/dyte_core.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_core/constants/colors.dart';
 import 'package:flutter_core/di/di.dart';
 import 'package:flutter_core/di/providers.dart';
-import 'package:flutter_core/models/meeting_details.dart';
-import 'package:flutter_core/models/participant_details.dart';
+import 'package:flutter_core/meeting_config.dart';
 import 'package:flutter_core/notifiers/states/router_states.dart';
-import 'package:flutter_core/secrets.dart';
 import 'package:flutter_core/ui/widgets/appbar.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'meeting/loading_screen.dart';
@@ -27,9 +24,6 @@ class _HomePageState extends ConsumerState<HomePage> {
   final descriptionController = TextEditingController();
 
   final roomNameController = TextEditingController();
-
-  MeetingDetails? meetingDetails;
-  ParticipantTokens? participantTokens;
 
   @override
   void initState() {
@@ -98,39 +92,28 @@ class _HomePageState extends ConsumerState<HomePage> {
     });
     return Scaffold(
       appBar: const DyteAppBar(),
-      body: Center(child: _meetingDetails(meetingRoomName)),
+      body: Center(child: _meetingDetails('Meeting Room Name')),
     );
   }
 
   Widget _meetingDetails(String meetLink) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        GestureDetector(
-          onTap: () {
-            Clipboard.setData(
-                ClipboardData(text: 'https://app.dyte.io/$meetLink'));
-          },
-          child: Text('https://app.dyte.io/$meetLink'),
+    return Center(
+      child: MaterialButton(
+        onPressed: () {
+          dyteMobileClient.init(
+            DyteMeetingInfoV2(
+              authToken: MeetingConfig.authToken,
+            ),
+          );
+        },
+        minWidth: 180,
+        height: 45,
+        color: DyteColors.primary,
+        child: const Text(
+          "Join Meeting",
+          style: TextStyle(fontSize: 16),
         ),
-        const SizedBox(height: 10),
-        MaterialButton(
-          onPressed: () {
-            dyteMobileClient.init(
-              DyteMeetingInfoV2(
-                authToken: v2AuthToken,
-              ),
-            );
-          },
-          minWidth: 180,
-          height: 45,
-          color: DyteColors.primary,
-          child: const Text(
-            "Join Meeting",
-            style: TextStyle(fontSize: 16),
-          ),
-        )
-      ],
+      ),
     );
   }
 

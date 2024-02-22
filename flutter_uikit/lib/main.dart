@@ -1,5 +1,6 @@
 import 'package:dyte_uikit/dyte_uikit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_uikit/meeting_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class HomePage extends StatelessWidget {
               MaterialPageRoute(builder: (context) {
                 final DyteUIKitInfo uiKitInfo = DyteUIKitInfo(
                   DyteMeetingInfoV2(
-                    authToken: "authToken",
+                    authToken: MeetingConfig.authToken,
                   ),
                 );
                 final uiKit = DyteUIKitBuilder.build(uiKitInfo: uiKitInfo);
