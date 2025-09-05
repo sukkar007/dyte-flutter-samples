@@ -2,11 +2,10 @@ workflows:
   flutter-workflow:
     name: Build dyte_astrology
     max_build_duration: 60
-    instance_type: mac_mini
+    instance_type: default  # تم تغيير mac_mini إلى default
     environment:
       flutter: stable
       vars:
-        # متغير API وهمي لتجنب خطأ padding
         DYTE_API_KEY: "DUMMY_API_KEY"
     scripts:
       - name: Navigate to project folder
