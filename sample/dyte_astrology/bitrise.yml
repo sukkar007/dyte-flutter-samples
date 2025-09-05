@@ -1,0 +1,32 @@
+format_version: '11'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+workflows:
+  flutter_build_apk:
+    title: Build dyte_astrology APK
+    description: Build Android APK for sample/dyte_astrology without running tests
+    steps:
+      - git-clone: {}
+      - script:
+          title: Navigate to project folder
+          inputs:
+            content: |
+              # الانتقال إلى مجلد المشروع الفرعي
+              cd sample/dyte_astrology
+      - flutter-installer:
+          title: Install Flutter SDK
+          inputs:
+            flutter_channel: stable
+      - flutter-deps:
+          title: Install dependencies
+      - flutter-build:
+          title: Build APK
+          inputs:
+            platform: android
+            build_name: "1.0.0"
+            build_number: "1"
+            build_mode: release
+      - deploy-to-bitrise-io:
+          title: Deploy APK
+          inputs:
+            deploy_path: "sample/dyte_astrology/build/app/outputs/flutter-apk/app-release.apk"
