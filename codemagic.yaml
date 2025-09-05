@@ -2,7 +2,7 @@ workflows:
   flutter-workflow:
     name: Build dyte_astrology
     max_build_duration: 60
-    instance_type: default  # تم تغيير mac_mini إلى default
+    instance_type: linux  # نوع الجهاز الصحيح لبناء Android
     environment:
       flutter: stable
       vars:
