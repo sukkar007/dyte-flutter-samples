@@ -1,0 +1,30 @@
+workflows:
+  flutter-workflow:
+    name: Build dyte_astrology
+    max_build_duration: 60
+    instance_type: mac_mini
+    environment:
+      flutter: stable
+      vars:
+        DYTE_API_KEY: Encrypted(your_encrypted_api_key_here)
+    scripts:
+      - name: Navigate to project folder
+        script: |
+          cd sample/dyte_astrology
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Run tests
+        script: |
+          flutter test
+    artifacts:
+      - sample/dyte_astrology/build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
+        on_success: always
+        on_failure: always
+    triggers:
+      - push
+      - pull_request
