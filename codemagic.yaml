@@ -6,7 +6,8 @@ workflows:
     environment:
       flutter: stable
       vars:
-        DYTE_API_KEY: Encrypted(your_encrypted_api_key_here)
+        # متغير API وهمي لتجنب خطأ padding
+        DYTE_API_KEY: "DUMMY_API_KEY"
     scripts:
       - name: Navigate to project folder
         script: |
